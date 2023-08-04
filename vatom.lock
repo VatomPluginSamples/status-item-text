@@ -1,0 +1,15 @@
+{
+  "id": "status-item-text",
+  "name": "Status Item Text",
+  "version": "0.0.1",
+  "beta": true,
+  "personalPlugin": true,
+  "description": "status-item-text",
+  "longDescription": "status-item-text",
+  "configuration": "TBD",
+  "category": "3d Objects",
+  "businessId": "3UewHF0ge9",
+  "price": 0,
+  "releaseNotes": "new",
+  "entrypoint": ""
+}
