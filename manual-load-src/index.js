@@ -42,10 +42,9 @@ export default class StatusItemTextPlugin extends BasePlugin {
 		
 		// Admin settings
 		this.menus.register({
-			title: "Status Item Settings",
 			section: 'plugin-settings',
 			panel: {
-				[{
+				fields: [{
 					id: 'status-item-scale',
 					name: 'scale',
 					help: 'text scale factor',
@@ -71,7 +70,9 @@ export default class StatusItemTextPlugin extends BasePlugin {
 				userID: this.myUserId,
 				size: 0.50
 			},{
-				type: 'text', text: 'Hello'
+				type: 'text',
+				text: 'Hello',
+				scale: this.getField('status-item-scale')
 			});
 			console.log('new StatusItem: ', this.myStatusItemId);
 		}
