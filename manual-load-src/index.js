@@ -39,6 +39,25 @@ export default class StatusItemTextPlugin extends BasePlugin {
 			text: 'Show IDs',
 			action: () => this.onBtnC()
 		})
+		
+		// Admin settings
+		this.menus.register({
+			title: "Status Item Settings",
+			section: 'plugin-settings',
+			panel: {
+				[{
+					id: 'status-item-scale',
+					name: 'scale',
+					help: 'text scale factor',
+					type: 'slider',
+					default: 1.0,
+					min: 0.1,
+					max: 20.0,
+					showValue: true,
+					precision: 1
+				}]
+			}
+		});
 	}
 
 
